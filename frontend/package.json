@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "start": "cp -r templates/* public/ && react-scripts start"
+    "start": "react-scripts start"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
