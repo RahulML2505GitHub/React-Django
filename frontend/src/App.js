@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 
 function App(props) {
     return (
       <>
         <Navbar title="Ice-Cream Shop"/>
-        <div className="container">
-          <p> I'm Rahul from India. </p>
+        <div className="container my-3">
+          <TextForm heading="Enter the text to analize bellow"/>
         </div>
       </>
     );

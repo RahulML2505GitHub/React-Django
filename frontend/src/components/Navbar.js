@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Navbar(props) {
     return (
@@ -14,7 +15,7 @@ export default function Navbar(props) {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">About</a>
+          <a className="nav-link" href="/about">{props.about}</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/contact">Contact</a>
@@ -28,4 +29,14 @@ export default function Navbar(props) {
   </div>
 </nav>
     );
+}
+
+Navbar.defaultProps = {
+    title: 'Title',
+    about: 'About'
+}
+
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired
 }

@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "start": "react-scripts start"
+    "start": "cp -r templates/* public/ && react-scripts start"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -22,5 +22,17 @@
     "web-vitals": "^1.1.2",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
